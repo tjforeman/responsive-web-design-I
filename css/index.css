@@ -74,7 +74,6 @@ table {
 
  }
 header img.logo{
-  margin-left:500px;
   display:flex;
   justify-content:flex-end;
 }
@@ -94,34 +93,35 @@ header {
 }
 
  .body {
-	display: flex;
-  margin-left:200px;
-   border-bottom:1px solid black
+    display: flex;
+   border-bottom:1px solid black;
+   align-items:center;
+   width:100%;
 }
 
  .text {
 	font-size: 65px;
 	width: 50%;
 	display: flex;
-	padding: 50px;
-	text-align:center;
-	flex-direction:column;
+    padding: 50px;
+    text-align:center;
+    flex-direction:column;
+    align-items:center;
 }
 
  .picture {
   width: 40%;
   padding: 50px;
 	display: flex;
-	vertical-align: middle;
+    vertical-align: middle;
 }
 
  button{
   background-color:white;
   width:20%;
   border-color:black;
-  align-self:flex-end;
+  align-self:center;
   flex-direction:column;
-  margin-right:190px;
   margin-top:100px;
 }
 .main-content {
@@ -167,4 +167,48 @@ header {
 footer{
   text-align:center;
   margin:30px;
-
+}
+@media(min-width:800px)
+{.button{
+margin-right:200px;  
+}
+}
+@media(max-width:800px)
+{.container{
+width:100%;
+}
+.head{
+  flex-direction:column-reverse;
+  justify-content:center; 
+}
+header nav{
+display:flex;
+flex-direction:row;
+width:100%;
+justify-content:space-between;
+}
+.logo{
+width:20%;
+align-content:center;
+justify-content:flex-start;
+margin-left:250px;
+padding-bottom:20px;
+}
+.picture{
+display:none;
+}
+button{
+    display:flex;
+    width:150px;
+    align-items:center;
+}
+.body{
+display:flex;
+align-items:center;
+width:100%;
+justify-content:center;
+}
+.text{
+border:1px soild red;
+}
+}
