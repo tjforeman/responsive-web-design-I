@@ -123,6 +123,7 @@ header {
   align-self:center;
   flex-direction:column;
   margin-top:100px;
+  text-align:center;
 }
 .main-content {
 	margin:20px;
@@ -215,7 +216,7 @@ justify-content:center;
 width:100%;
 }
 header{
-width:500px;
+width:80%;
 flex-direction:column;
 justify-content:center;
 }
@@ -245,8 +246,8 @@ display:flex;
 flex-direction:column;
 }
 .body{
-    margin-right:20px;
-    padding-left:65px;
+    padding-right:50px;
+    
 }
 .text2{
 flex-direction:column;
