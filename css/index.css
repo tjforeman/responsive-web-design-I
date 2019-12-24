@@ -1,3 +1,266 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+ /* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
 
+ html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+ h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+ /* Your code starts here! */
+
+ header nav {
+  font-size: 18px;
+ display:flex;
+}
+
+ header nav a{
+  margin: 0 20px;
+  text-decoration:none;
+  color:gray;
+  justify-content:space-evenly;
+
+ }
+header img.logo{
+  display:flex;
+  justify-content:flex-end;
+}
+h1{
+  font-size:50px;
+}
+p{
+  margin:10px;
+}
+.head{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+header {
+	vertical-align: middle;
+}
+
+ .body {
+    display: flex;
+   border-bottom:1px solid black;
+   align-items:center;
+   width:100%;
+}
+
+ .text {
+	font-size: 65px;
+	width: 50%;
+	display: flex;
+    padding: 50px;
+    text-align:center;
+    flex-direction:column;
+    align-items:center;
+}
+
+ .picture {
+  width: 40%;
+  padding: 50px;
+	display: flex;
+    vertical-align: middle;
+}
+
+ button{
+  background-color:white;
+  width:20%;
+  border-color:black;
+  align-self:center;
+  flex-direction:column;
+  margin-top:100px;
+  text-align:center;
+}
+.main-content {
+	margin:20px;
+	display: flex;
+	justify-content:center;
+}
+
+ .top{
+	display: flex;
+	justify-content:center;
+}
+
+ .text2 {
+	display: flex;
+    box-sizing: border-box;
+    flex-direction:column;
+}
+
+ .middle-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.bottom {
+	display: flex;
+	border-bottom: 1px solid black
+}
+
+ .text3 {
+	display: flex;
+	box-sizing: border-box;
+    margin: 25px;
+    flex-direction:column;
+}
+.info{
+  width:200px;
+  display:block;
+  line-height:1.25;
+  margin-left:20px;
+  margin-top:10px;
+}
+footer{
+  text-align:center;
+  margin:30px;
+}
+@media(min-width:800px)
+{.button{
+margin-right:200px;  
+}
+}
+@media(max-width:800px)
+{.container{
+width:100%;
+}
+.head{
+  flex-direction:column-reverse;
+  justify-content:center; 
+}
+header nav{
+display:flex;
+flex-direction:row;
+width:100%;
+justify-content:space-between;
+}
+.logo{
+width:80%;
+align-content:center;
+justify-content:flex-start;
+padding-bottom:20px;
+margin-left:10px;
+}
+.picture{
+display:none;
+}
+button{
+    display:flex;
+    width:150px;
+    align-items:center;
+}
+.body{
+display:flex;
+align-items:center;
+width:100%;
+justify-content:center;
+}
+}
+@media(max-width:500px)
+{.container{
+width:100%;
+}
+header{
+width:80%;
+flex-direction:column;
+justify-content:center;
+}
+header nav{
+width: 100%;
+flex-direction:column;
+}
+header .logo{
+display:flex;
+text-align:center;
+padding-left:65px;
+}
+header nav a:first-child{
+    border-top: 1px solid gray;
+    padding-top:5px;
+}
+header nav a{
+display:flex;
+border-bottom:1px solid gray;
+width:100%;
+text-align:center;
+flex-direction:column;
+margin-top:10px;
+}
+.main-content{
+display:flex;
+flex-direction:column;
+}
+.body{
+    padding-right:50px;
+    
+}
+.text2{
+flex-direction:column;
+padding:20px;
+}
+.top{
+flex-direction:column;
+}
+.text3{
+width:100%;
+}
+.bottom{
+flex-direction:column;
+width:100%;
+}
+}
